@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Theme.AstroskinHexoskinDemo.PopupOverlay"
+        app:title="@string/sdk_features"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/featuresHeartRateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/heart_rate"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/featuresHeartRateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/value_placeholder"
+        app:layout_constraintBottom_toBottomOf="@+id/featuresHeartRateLabel"
+        app:layout_constraintStart_toEndOf="@+id/featuresHeartRateLabel"
+        app:layout_constraintTop_toTopOf="@+id/featuresHeartRateLabel"
+        tools:text="85" />
+
+    <TextView
+        android:id="@+id/featuresHeartRateUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/bpm"
+        app:layout_constraintBottom_toBottomOf="@+id/featuresHeartRateLabel"
+        app:layout_constraintStart_toEndOf="@+id/featuresHeartRateValue"
+        app:layout_constraintTop_toTopOf="@+id/featuresHeartRateLabel" />
+
+    <TextView
+        android:id="@+id/featuresBreathingRateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/breathing_rate"
+        app:layout_constraintBottom_toBottomOf="@+id/featuresHeartRateLabel"
+        app:layout_constraintStart_toEndOf="@+id/featuresHeartRateUnit"
+        app:layout_constraintTop_toTopOf="@+id/featuresHeartRateLabel" />
+
+    <TextView
+        android:id="@+id/featuresBreathingRateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/value_placeholder"
+        app:layout_constraintBottom_toBottomOf="@+id/featuresBreathingRateLabel"
+        app:layout_constraintStart_toEndOf="@+id/featuresBreathingRateLabel"
+        app:layout_constraintTop_toTopOf="@+id/featuresBreathingRateLabel"
+        tools:text="60" />
+
+    <TextView
+        android:id="@+id/featuresBreathingRateUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/rpm"
+        app:layout_constraintBottom_toBottomOf="@+id/featuresBreathingRateLabel"
+        app:layout_constraintStart_toEndOf="@+id/featuresBreathingRateValue"
+        app:layout_constraintTop_toTopOf="@+id/featuresBreathingRateLabel" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/featuresDeviceInfoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/device_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featuresHeartRateLabel" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/featuresStateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/state"
+        app:layout_constraintEnd_toStartOf="@+id/featuresStopSessionButton"
+        app:layout_constraintStart_toEndOf="@+id/featuresDeviceInfoButton"
+        app:layout_constraintTop_toBottomOf="@+id/featuresHeartRateLabel" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/featuresStopSessionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/stop_session"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featuresHeartRateLabel" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/featuresGetECGButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/get_ecg"
+        app:layout_constraintStart_toStartOf="@+id/featuresDeviceInfoButton"
+        app:layout_constraintTop_toBottomOf="@+id/featuresDeviceInfoButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/featuresGetRespButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/get_resp"
+        app:layout_constraintStart_toStartOf="@+id/featuresDeviceInfoButton"
+        app:layout_constraintTop_toBottomOf="@+id/featuresGetECGButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/featuresGetTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/get_time"
+        app:layout_constraintStart_toStartOf="@+id/featuresStateButton"
+        app:layout_constraintTop_toBottomOf="@+id/featuresStateButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/featuresSetTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/set_time"
+        app:layout_constraintStart_toStartOf="@+id/featuresStopSessionButton"
+        app:layout_constraintTop_toBottomOf="@+id/featuresStopSessionButton" />
+
+    <TextView
+        android:id="@+id/featuresThoracicValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="thoracic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featuresGetRespButton" />
+
+    <TextView
+        android:id="@+id/featuresAbdominalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="abdominal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featuresThoracicValue" />
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hexoskin.astroskinhexoskindemo.CanvasView
+        android:id="@+id/featuresCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

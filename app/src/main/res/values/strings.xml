@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Astroskin Hexoskin Demo</string>
+    <string name="pairing_failed">Pairing failed. Please make sure your Astroskin/Hexoskin device is on and in pairing mode.</string>
+    <string name="permission_not_accepted">All permissions needs to be accepted.</string>
+    <string name="device_info">Device info</string>
+    <string name="sdk_features">SDK features</string>
+    <string name="stop_session">Stop session</string>
+    <string name="state">Device state</string>
+    <string name="heart_rate">Heart rate: </string>
+    <string name="bpm">BPM</string>
+    <string name="breathing_rate">Breathing rate: </string>
+    <string name="rpm">RPM</string>
+    <string name="get_ecg">Get ECG</string>
+    <string name="get_resp">Get RESP</string>
+    <string name="get_time">Get time</string>
+    <string name="set_time">Set time</string>
+    <string name="ecg_data_label">RAW Data</string>
+    <string name="resp_data_label">Respiration Data</string>
+    <string name="close">Close</string>
+    <string name="device_state">Device State</string>
+    <string name="ecg_enabled">ECG data enabled</string>
+    <string name="resp_enabled">Respiration data enabled</string>
+    <string name="session_stopped">Session stopped</string>
+    <string name="time_set">Time set</string>
+    <string name="value_placeholder">--</string>
+    <string name="battery_charge_level">Battery charge level: %1$s \n</string>
+    <string name="recording_status">Recording: %1$s \n</string>
+    <string name="device_info_model">Model: %1$s \n</string>
+    <string name="device_info_firmware">Firmware: %1$s \n</string>
+    <string name="device_info_serial">Serial: %1$s \n</string>
+    <string name="device_open_failed">Device failed to open</string>
+</resources>

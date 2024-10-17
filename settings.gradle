@@ -1,0 +1,4 @@
+include ':hxsdk'
+include ':app'
+rootProject.name = "astroskinhexoskindemo"
+
